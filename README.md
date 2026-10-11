@@ -1,6 +1,6 @@
-# Wattwise — TV Energy Data Story
+# BillWise — TV Energy Data Story
 
-Wattwise is a three-page COS30045 website by Lam Khai. It turns a cleaned Australian television energy dataset into an interactive story about screen size, screen technology and labelled annual energy consumption.
+BillWise is a three-page COS30045 website by Lam Khai. It turns a cleaned Australian television energy dataset into an interactive story about screen size, screen technology and labelled annual energy consumption.
 
 The site uses plain HTML, one external CSS file and vanilla JavaScript. It has no framework, package installation, CDN or build step, so it is ready for GitHub Pages or the Swinburne Mercury server.
 
