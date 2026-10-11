@@ -70,25 +70,4 @@ if (energyForm) {
   energyForm.addEventListener('submit', event => {event.preventDefault(); updateEstimate(true);});
   energyForm.addEventListener('input', () => updateEstimate());
   updateEstimate();
-
-  // Optional browser capability: use the same visible form and validation for agents.
-  const context = document.modelContext;
-  if (context?.registerTool) {
-    try {
-      Promise.resolve(context.registerTool({
-        name: 'calculate_appliance_energy', title: 'Calculate appliance energy',
-        description: 'Set the visible calculator inputs and show estimated energy and cost.',
-        inputSchema: {type: 'object', additionalProperties: false,
-          properties: {power: {type: 'number', minimum: 0, maximum: 100000}, hours: {type: 'number', minimum: 0, maximum: 24}, rate: {type: 'number', minimum: 0, maximum: 1000}}, required: ['power','hours','rate']},
-        annotations: {readOnlyHint: false, untrustedContentHint: false},
-        execute(input) {
-          for (const field of fields) {
-            if (typeof input[field.id] !== 'number' || !Number.isFinite(input[field.id]) || input[field.id] < 0 || input[field.id] > field.max) throw new Error(field.label);
-          }
-          fields.forEach(field => {document.getElementById(field.id).value = String(input[field.id]);});
-          return updateEstimate();
-        }
-      })).catch(() => {});
-    } catch (_) { /* Browsers without WebMCP still use the normal form. */ }
-  }
 }

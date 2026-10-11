@@ -70,7 +70,7 @@ The visualisation keeps all records and makes its transformations visible. It di
 ```text
 index.html                            Home page, FAQ and energy calculator
 televisions.html                      Data story, five charts and filters
-about.html                            Purpose, method, limitations and AI use
+about.html                            Purpose, method and limitations
 assets/
   css/styles.css                      Shared external styling
   data/tv_energy_cleaned.csv          Cleaned KNIME export (4,724 rows)
@@ -80,8 +80,6 @@ assets/
 docs/
   Televisions_Page_Chart_Correction_Report.docx
   CHART_CORRECTION_CHANGELOG.md
-GENAI_DECLARATION.md
-DEMONSTRATION_GUIDE.md
 README.md
 START_LOCAL.cmd
 ```
@@ -156,4 +154,3 @@ I reviewed the generated suggestions, checked transformations and chart choices 
 
 **Limitations or issues:** AI suggestions still required checking against real column names, data values, KNIME node behaviour and assignment requirements. AI could not prove that differently worded brands represented the same company or verify the dataset's original publisher. The visualisations show associations rather than causes.
 
-A standalone copy is provided in [`GENAI_DECLARATION.md`](GENAI_DECLARATION.md).
