@@ -7,7 +7,3 @@ I made the project decisions and reviewed the generated work. For example, I cho
 Using GenAI helped me understand the difference between formatting cleanup and changing the meaning of data, why profiling should be separated from the main processing flow, how screen size is converted from centimetres to inches, and how different charts answer different questions. I also learned how HTML provides structure, CSS controls presentation, and JavaScript adds interaction to the website.
 
 GenAI had limitations. Its suggestions still needed to be checked against the dataset and assignment requirements. It could not prove that differently written brand names represented the same company, verify the original publisher of the supplied dataset, or turn associations in the charts into evidence of cause. After review, the supplied course logo was added and the chart presentation was corrected in response to lecturer feedback.
-
-## Short verbal declaration
-
-> I used ChatGPT and Codex to help design and test the KNIME workflow, identify brand-label inconsistencies, and develop the website. I reviewed the suggestions, chose the final cleaning rules and charts, and kept uncertain brand names unchanged. I can explain the submitted workflow, calculations, charts, and website features.
